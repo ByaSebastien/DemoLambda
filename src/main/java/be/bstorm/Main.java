@@ -1,5 +1,6 @@
 package be.bstorm;
 
+import be.bstorm.demos.DemoMethods;
 import be.bstorm.interfaces.GeneriqueIF;
 import be.bstorm.interfaces.PersonIF;
 import be.bstorm.interfaces.impl.GeneriqueIFImpl;
@@ -84,5 +85,13 @@ public class Main {
         Supplier<Boolean> supplier1 = () -> true;
 
         consumer1.accept(p);
+
+        DemoMethods demoMethods = new DemoMethods();
+
+        if(demoMethods.estPair(5)){
+            System.out.println(5 + " est pair");
+        }
+
+        System.out.println(demoMethods);
     }
 }
