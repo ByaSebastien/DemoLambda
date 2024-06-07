@@ -25,9 +25,31 @@ public class DemoMethods {
         return name;
     }
 
-    public boolean estPair(int nb){
+//    public boolean estPair(int nb){
+////        String n = this.getName();
+//        return nb % 2 == 0;
+//    }
+//
+//    public boolean estPair(int[] nb){
+////        String n = this.getName();
+//        boolean sontIlsTousPair = true;
+//        for(int n : nb){
+//            if(n % 2 != 0){
+//                return false;
+//            }
+//        }
+//        return true;
+//    }
+
+    public boolean estPair(int... nb){
 //        String n = this.getName();
-        return nb % 2 == 0;
+        boolean sontIlsTousPair = true;
+        for(int n : nb){
+            if(n % 2 != 0){
+                return false;
+            }
+        }
+        return true;
     }
 
     public boolean estPair(double nb){

@@ -7,6 +7,7 @@ import be.bstorm.interfaces.impl.GeneriqueIFImpl;
 import be.bstorm.interfaces.impl.PersonIFImpl;
 import be.bstorm.models.Person;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
@@ -88,8 +89,12 @@ public class Main {
 
         DemoMethods demoMethods = new DemoMethods();
 
-        if(demoMethods.estPair(5)){
-            System.out.println(5 + " est pair");
+        int[] array = {2,4,6,8};
+
+        if(demoMethods.estPair(2,4,6,8)){
+            System.out.println("ils sont tous pair");
+        }else{
+            System.out.println("Ils ne sont pas tous pair");
         }
 
         System.out.println(demoMethods);
